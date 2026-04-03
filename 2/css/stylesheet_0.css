@@ -1,0 +1,14 @@
+::slotted(.swiper-slide-shadow), ::slotted(.swiper-slide-shadow-bottom), ::slotted(.swiper-slide-shadow-left), ::slotted(.swiper-slide-shadow-right), ::slotted(.swiper-slide-shadow-top) { position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; pointer-events: none; z-index: 10; }
+::slotted(.swiper-slide-shadow) { background: rgba(0, 0, 0, 0.15); }
+::slotted(.swiper-slide-shadow-left) { background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+::slotted(.swiper-slide-shadow-right) { background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+::slotted(.swiper-slide-shadow-top) { background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+::slotted(.swiper-slide-shadow-bottom) { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+.swiper-lazy-preloader { animation: 1s linear 0s infinite normal none running swiper-preloader-spin; width: 42px; height: 42px; position: absolute; left: 50%; top: 50%; margin-left: -21px; margin-top: -21px; z-index: 10; transform-origin: 50% center; box-sizing: border-box; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-bottom-color: ; border-bottom-style: ; border-bottom-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; border-radius: 50%; border-top-color: transparent; }
+@keyframes swiper-preloader-spin { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+::slotted(.swiper-slide-shadow-cube.swiper-slide-shadow-bottom), ::slotted(.swiper-slide-shadow-cube.swiper-slide-shadow-left), ::slotted(.swiper-slide-shadow-cube.swiper-slide-shadow-right), ::slotted(.swiper-slide-shadow-cube.swiper-slide-shadow-top) { z-index: 0; backface-visibility: hidden; }
+::slotted(.swiper-slide-shadow-flip.swiper-slide-shadow-bottom), ::slotted(.swiper-slide-shadow-flip.swiper-slide-shadow-left), ::slotted(.swiper-slide-shadow-flip.swiper-slide-shadow-right), ::slotted(.swiper-slide-shadow-flip.swiper-slide-shadow-top) { z-index: 0; backface-visibility: hidden; }
+::slotted(.swiper-zoom-container) { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; text-align: center; }

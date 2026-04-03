@@ -1,0 +1,16 @@
+# new2 — индексация «глубокой» релевантной страницы (/ru/…/ru/)
+
+User-agent: Yandex
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Crawl-delay: 1
+Host: riobet.62138.casino
+Sitemap: https://riobet.62138.casino/sitemap.xml
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&utm_referrer&_openstat&yclid&gclid&fbclid /
+
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Crawl-delay: 1
+Sitemap: https://riobet.62138.casino/sitemap.xml
