@@ -1,0 +1,76 @@
+/* Static export: swiper web components without runtime JS */
+swiper-container.categories {
+	display: block;
+	width: 100%;
+	min-width: 0;
+}
+
+.categoriesBlock .categoriesWrapper .categories swiper-slide {
+	display: block !important;
+	flex-shrink: 0;
+	width: auto !important;
+	max-width: none;
+	height: auto;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.categoriesBlock .categoriesWrapper .categories .category {
+	display: block;
+	width: max-content;
+	max-width: 100%;
+}
+
+.categoriesBlock .categoriesWrapper .categories .category .inner {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 0;
+}
+
+@media (max-width: 600px) {
+	.categoriesBlock .categoriesWrapper .categories .category .inner {
+		flex-direction: column;
+	}
+}
+
+/* Отрезать вылет текста баннера поверх полосы категорий */
+.start .banner.bonusBanner {
+	overflow: hidden;
+}
+
+/* Фон баннера без растровых картинок: фирменные сине-бирюзовые градиенты */
+.banner.bonusBanner .back.bonusBanner-gradient {
+	background-color: #121a29;
+	background-image:
+		radial-gradient(ellipse 100% 120% at 100% 0%, rgba(65, 198, 255, 0.22) 0%, transparent 52%),
+		radial-gradient(ellipse 80% 70% at 0% 100%, rgba(26, 100, 252, 0.38) 0%, transparent 48%),
+		radial-gradient(circle at 70% 85%, rgba(43, 144, 254, 0.15) 0%, transparent 42%),
+		linear-gradient(168deg, #0d1524 0%, #152238 32%, #163a5c 58%, #0c111c 100%);
+}
+
+/* Высота баннера ×1.3 относительно исходных padding-top (386 / 250 / 186) */
+.banner.bonusBanner::after {
+	padding-top: 502px;
+}
+
+@media (max-width: 900px) {
+	.banner.bonusBanner::after {
+		padding-top: 325px;
+	}
+}
+
+@media (max-width: 600px) {
+	.banner.bonusBanner::after {
+		padding-top: 242px;
+	}
+}
+
+.start .lobbySearch {
+	position: relative;
+	z-index: 2;
+	margin-top: 20px;
+	padding-top: 4px;
+	background-color: var(--bgColor, #0c111c);
+}
